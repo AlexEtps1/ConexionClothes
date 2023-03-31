@@ -1,0 +1,122 @@
+/*Codigo erick*/
+body {
+    width: 100%;
+    background: white;
+  }
+  .title-h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .preguntasPrin {
+    height: 100vh;
+  }
+  .preguntasPrin img {
+    width: 75px;
+  }
+  
+  .wrap-nav {
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .wrap-ul, .element-ul, .article-ul {
+    list-style:none;
+  }
+  
+  .wrap-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+  .wrap-li-right {
+    margin-right: 10px;
+  }
+  .wrap-li-right .article-ul > .article-li{
+    margin-right: 280px;
+  }
+  
+  .wrap-a {
+    background-color:white;
+    color:#333;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    text-align: center;
+  }
+  .element-a {
+    background-color: transparent;
+    color:#363131;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    text-align: center;
+  }
+  .element-a:hover {
+    border: 1px solid #363131;
+  }
+  .article-p {
+    background-color:#333;
+    color:#fff;
+    padding:10px 12px;
+    display:block;
+    text-align: justify;
+    margin-left: 100px;
+    border: 2px solid black;
+  }
+  .wrap-a:hover {
+    box-shadow: 2px 3px 2px 3px gray;
+  }
+  
+  .element-ul, .article-ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+  }
+  
+  .wrap-li:hover > .element-ul {
+    display: block;
+  }
+  .wrap-li-right:hover > .element-ul {
+    display: block;
+  }
+  .element-li:hover > .article-ul {
+    display: block;
+  }
+  
+  .element-li {
+    position:relative;
+  }
+  
+  .article-ul {
+    right:-140px;
+    top:0px;
+  }
+  @media (max-width: 768px) {
+    .wrap-li-right .article-ul > .article-li {
+        margin-right: 0;
+    }
+    .wrap-ul {
+      flex-direction: column;
+    }
+    
+    .wrap-li {
+      display: block;
+    }
+    
+    .wrap-a {
+      padding: 10px;
+    }
+    
+    .element-ul {
+      position: static;
+      background-color: #fff;
+      visibility: visible;
+    }
+    
+    .element-li {
+      display: inline-block;
+    }
+  }
